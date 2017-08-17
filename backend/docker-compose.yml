@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build: .
+    ports:
+      - localhost:5000:5000
+    volumes:
+      - ./api:/src/api
+    links:
+      - db
+  db:
+    image: mongo:3.5.11
+    ports:
+      - localhost:27017:27017

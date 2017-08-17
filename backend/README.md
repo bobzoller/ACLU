@@ -1,21 +1,19 @@
-# Data
-
-Please see the [data schema](Schema.md) for more details.
-
-# Installation
+# Development
 
 ## Requirements
 
-* Docker
+* Docker ([Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac); Linux :neckbeard:)
 
 ## Running API
 
 ```
-cd docker
-docker-compose build
 docker-compose up -d
-curl localhost:5000/aloha
+curl http://localhost:5000/aloha
 ```
+
+# Data
+
+Please see the [data schema](Schema.md) for more details.
 
 # Common tasks
 
